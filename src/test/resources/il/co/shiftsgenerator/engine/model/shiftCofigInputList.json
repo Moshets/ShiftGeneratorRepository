@@ -1,0 +1,129 @@
+[
+	{
+		"startDate":"01/06/2014 08:00",
+		"endDate":"01/06/2014 16:00",
+		"shiftType":"Regular",
+		"capacity":5
+	},
+	{
+		"startDate":"01/06/2014 16:00",
+		"endDate":"01/06/2014 23:00",
+		"shiftType":"Regular",
+		"capacity":5
+	},
+	{
+		"startDate":"01/06/2014 23:00",
+		"endDate":"02/06/2014 08:00",
+		"shiftType":"Regular",
+		"capacity":5
+	},
+	{
+		"startDate":"02/06/2014 08:00",
+		"endDate":"02/06/2014 16:00",
+		"shiftType":"Regular",
+		"capacity":5
+	},
+	{
+		"startDate":"02/06/2014 16:00",
+		"endDate":"02/06/2014 23:00",
+		"shiftType":"Regular",
+		"capacity":5
+	},
+	{
+		"startDate":"02/06/2014 23:00",
+		"endDate":"03/06/2014 08:00",
+		"shiftType":"Regular",
+		"capacity":5
+	},
+	{
+		"startDate":"03/06/2014 08:00",
+		"endDate":"03/06/2014 16:00",
+		"shiftType":"Regular",
+		"capacity":5
+	},
+	{
+		"startDate":"03/06/2014 16:00",
+		"endDate":"03/06/2014 23:00",
+		"shiftType":"Regular",
+		"capacity":5
+	},
+	{
+		"startDate":"03/06/2014 23:00",
+		"endDate":"04/06/2014 08:00",
+		"shiftType":"Regular",
+		"capacity":5
+	},
+	{
+		"startDate":"04/06/2014 08:00",
+		"endDate":"04/06/2014 16:00",
+		"shiftType":"Regular",
+		"capacity":5
+	},
+	{
+		"startDate":"04/06/2014 16:00",
+		"endDate":"04/06/2014 23:00",
+		"shiftType":"Regular",
+		"capacity":5
+	},
+	{
+		"startDate":"04/06/2014 23:00",
+		"endDate":"05/06/2014 08:00",
+		"shiftType":"Regular",
+		"capacity":5
+	},	
+	{
+		"startDate":"05/06/2014 08:00",
+		"endDate":"05/06/2014 16:00",
+		"shiftType":"Regular",
+		"capacity":5
+	},
+	{
+		"startDate":"05/06/2014 16:00",
+		"endDate":"05/06/2014 23:00",
+		"shiftType":"Regular",
+		"capacity":5
+	},
+	{
+		"startDate":"05/06/2014 23:00",
+		"endDate":"06/06/2014 08:00",
+		"shiftType":"Regular",
+		"capacity":5
+	},	
+	{
+		"startDate":"06/06/2014 08:00",
+		"endDate":"06/06/2014 16:00",
+		"shiftType":"Regular",
+		"capacity":5
+	},
+	{
+		"startDate":"06/06/2014 16:00",
+		"endDate":"06/06/2014 23:00",
+		"shiftType":"Regular",
+		"capacity":5
+	},
+	{
+		"startDate":"06/06/2014 23:00",
+		"endDate":"07/06/2014 08:00",
+		"shiftType":"Regular",
+		"capacity":5
+	},	
+	{
+		"startDate":"07/06/2014 08:00",
+		"endDate":"07/06/2014 16:00",
+		"shiftType":"Regular",
+		"capacity":5
+	},
+	{
+		"startDate":"07/06/2014 16:00",
+		"endDate":"07/06/2014 23:00",
+		"shiftType":"Regular",
+		"capacity":5
+	},
+	{
+		"startDate":"07/06/2014 23:00",
+		"endDate":"08/06/2014 08:00",
+		"shiftType":"Regular",
+		"capacity":5
+	}
+	
+]
