@@ -4,10 +4,20 @@ import java.text.ParseException;
 
 public class ShiftConfiguration {
 
+	private String shiftKey;
 	private int capacity;
 	private String shiftType;
 	private String startDate;
 	private String endDate;
+	private String shiftRole;
+	
+	
+	public String getShiftKey() {
+		return shiftKey;
+	}
+	public void setShiftKey(String shiftKey) {
+		this.shiftKey = shiftKey;
+	}
 	public int getCapacity() {
 		return capacity;
 	}
@@ -21,7 +31,6 @@ public class ShiftConfiguration {
 		return endDate;
 	}
 	public void setEndDate(String endDate) throws ParseException {
-		//dateFormat.parse(endDate);
 		this.endDate = endDate;
 	}
 	public void setCapacity(int capacity) {
@@ -33,11 +42,19 @@ public class ShiftConfiguration {
 	public void setShiftType(String shiftType) {
 		this.shiftType = shiftType;
 	}
+	public String getShiftRole() {
+		return shiftRole;
+	}
+	
 	@Override
 	public String toString() {
-		return "ShiftConfiguration [capacity=" + capacity + ", shiftType="
-				+ shiftType + ", startDate=" + startDate + ", endDate="
-				+ endDate + "]";
+		return "ShiftConfiguration [shiftKey=" + shiftKey + ", capacity="
+				+ capacity + ", shiftType=" + shiftType + ", startDate="
+				+ startDate + ", endDate=" + endDate + ", shiftRole="
+				+ shiftRole + "]";
+	}
+	public void setShiftRole(String shiftRole) {
+		this.shiftRole = shiftRole;
 	}
 	
 }

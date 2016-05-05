@@ -5,6 +5,7 @@ import java.util.List;
 public class Shift {
 
 	private ShiftConfiguration shiftConfiguration;
+	private String shiftKey;
 	private Preference preference;
 	private boolean assign;
 	private int remainCapacity;
@@ -41,8 +42,17 @@ public class Shift {
 	public void setShiftConfiguration(ShiftConfiguration shiftConfiguration) {
 		this.shiftConfiguration = shiftConfiguration;
 	}
-	
-	
-	
-	
+	public String getShiftKey() {
+		return shiftKey;
+	}
+	public void setShiftKey(String shiftKey) {
+		this.shiftKey = shiftKey;
+	}
+	@Override
+	public String toString() {
+		return "Shift [shiftConfiguration=" + shiftConfiguration
+				+ ", shiftKey=" + shiftKey + ", preference=" + preference
+				+ ", assign=" + assign + ", remainCapacity=" + remainCapacity
+				+ ", selectedEmployees=" + selectedEmployees + "]";
+	}
 }
