@@ -3,4 +3,12 @@
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
 
+	<bean id="ShiftValidatePredicate" name="ShiftValidatePredicate"
+		class="il.co.shiftsgenerator.engine.model.services.validation.ShiftValidatePredicate">
+		<property name="dateFormat" ref="dateFormat"></property>
+	</bean>
+	
+	<bean name="dateFormat" class="java.text.SimpleDateFormat">
+	<constructor-arg value="dd/MM/YYYY hh:mm"></constructor-arg>
+	</bean>
 </beans>

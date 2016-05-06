@@ -21,7 +21,7 @@ public class ShiftTest {
 	public void testShiftModel() throws Exception {
 		Shift shift = jsonLoader.getObject(SHIFT_JSON_FILE, new TypeReference<Shift>() {});
 
-		assertThat(shift.getShiftKey(), equalTo("01/06/2014 08:00 Sun"));
+		assertThat(shift.getShiftKey(), equalTo("01/06/2014 08:00"));
 		assertThat(shift.getPreference(), equalTo(Preference.BLOCKED));
 		assertThat(shift.isAssign(), is(true));
 	}
