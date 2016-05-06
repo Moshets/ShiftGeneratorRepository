@@ -1,14 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
 	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd">
+	xmlns:aop="http://www.springframework.org/schema/aop"
+	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
 
-	<bean id="ShiftValidatePredicate" name="ShiftValidatePredicate"
-		class="il.co.shiftsgenerator.engine.model.services.validation.ShiftValidatePredicate">
+	<bean id="ShiftValidatePredicate" name="ShiftValidatePredicate" 
+		class="il.co.shiftsgenerator.engine.services.validation.ShiftValidatePredicate" scope="prototype">
 		<property name="dateFormat" ref="dateFormat"></property>
+		<property name="shiftValidationResultHolder" ref="shiftValidationResultHolder"></property>
 	</bean>
 	
 	<bean name="dateFormat" class="java.text.SimpleDateFormat">
 	<constructor-arg value="dd/MM/YYYY hh:mm"></constructor-arg>
+	</bean>
+	
+	<bean name="shiftValidationResultHolder" class="il.co.shiftsgenerator.engine.services.validation.ShiftValidationResultHolder" scope="prototype">
+		<constructor-arg>
+        <value type="il.co.shiftsgenerator.engine.services.validation.ShiftValidationResultEnum">PASS</value>
+    	</constructor-arg>
+
 	</bean>
 </beans>
