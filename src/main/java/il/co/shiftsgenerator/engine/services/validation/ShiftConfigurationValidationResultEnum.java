@@ -1,6 +1,6 @@
 package il.co.shiftsgenerator.engine.services.validation;
 
-public enum ShiftValidationResultEnum {
+public enum ShiftConfigurationValidationResultEnum {
 
 	PASS("Shift Validation pass successfully"),
 	FAIL("Shift Validation fail"),
@@ -9,7 +9,7 @@ public enum ShiftValidationResultEnum {
 	private String message;
 
 	
-	private ShiftValidationResultEnum(String message) {
+	private ShiftConfigurationValidationResultEnum(String message) {
 		this.message = message;
 	}
 

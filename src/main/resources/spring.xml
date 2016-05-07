@@ -6,7 +6,7 @@
 
 
 	<bean id="ShiftValidateFunction" name="ShiftValidateFunction"
-		class="il.co.shiftsgenerator.engine.services.validation.ShiftValidateFunction">
+		class="il.co.shiftsgenerator.engine.services.validation.ShiftConfigurationValidateFunction">
 		<property name="dateFormat" ref="dateFormat"></property>
 	</bean>
 

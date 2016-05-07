@@ -15,25 +15,25 @@ import com.google.common.base.Function;
  * @author moshets
  *
  */
-public class ShiftValidateFunction implements
-		Function<ShiftConfiguration, ShiftValidationResultEnum> {
+public class ShiftConfigurationValidateFunction implements
+		Function<ShiftConfiguration, ShiftConfigurationValidationResultEnum> {
 
 	private SimpleDateFormat dateFormat;
 	
 	
 	@Override
-	public ShiftValidationResultEnum apply(ShiftConfiguration shiftConfiguration) {
+	public ShiftConfigurationValidationResultEnum apply(ShiftConfiguration shiftConfiguration) {
 		try {
 			Date startDate = dateFormat.parse(shiftConfiguration.getStartDate());
 			Date endDate = dateFormat.parse(shiftConfiguration.getEndDate());
 			Long duration = (endDate.getTime() -  startDate.getTime());
 			if(duration < 0 ){
-				return ShiftValidationResultEnum.END_DATE_BEFORE_START_DATE;
+				return ShiftConfigurationValidationResultEnum.END_DATE_BEFORE_START_DATE;
 			}
 		} catch (ParseException e) {
-			return ShiftValidationResultEnum.PARSING_FAIL;
+			return ShiftConfigurationValidationResultEnum.PARSING_FAIL;
 		}
-		return ShiftValidationResultEnum.PASS;
+		return ShiftConfigurationValidationResultEnum.PASS;
 	}
 
 

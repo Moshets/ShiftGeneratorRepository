@@ -13,7 +13,7 @@ import org.junit.Test;
 import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
-public class ShiftValidateFunctionTest {
+public class ShiftConfigurationValidateFunctionTest {
 
 	private static ApplicationContext context;
 	private JsonLoader jsonLoader = new JsonLoader();
@@ -28,59 +28,59 @@ public class ShiftValidateFunctionTest {
 	@Test
 	public void testValidationPass() throws Exception {
 		
-		ShiftValidateFunction shiftValidateFunctionBean = context.getBean(ShiftValidateFunction.class);
+		ShiftConfigurationValidateFunction shiftValidateFunctionBean = context.getBean(ShiftConfigurationValidateFunction.class);
 		List<ShiftConfiguration> shiftsConfig = jsonLoader.getObject(SHIFT_JSON_FILE, new TypeReference<List<ShiftConfiguration>>() {});
 		
 
 		ShiftConfiguration shiftConfiguration = shiftsConfig.get(0);
-		ShiftValidationResultEnum validationResult = shiftValidateFunctionBean.apply(shiftConfiguration);
+		ShiftConfigurationValidationResultEnum validationResult = shiftValidateFunctionBean.apply(shiftConfiguration);
 
-		assertThat(validationResult, is(ShiftValidationResultEnum.PASS));
+		assertThat(validationResult, is(ShiftConfigurationValidationResultEnum.PASS));
 	}
 
 	@Test
 	public void testValidationParsingFaliOnStartDate() throws Exception {
-		ShiftValidateFunction shiftValidateFunctionBean = context.getBean(ShiftValidateFunction.class);
+		ShiftConfigurationValidateFunction shiftValidateFunctionBean = context.getBean(ShiftConfigurationValidateFunction.class);
 		List<ShiftConfiguration> shiftsConfig = jsonLoader.getObject(SHIFT_JSON_FILE, new TypeReference<List<ShiftConfiguration>>() {});
 		
 
 		ShiftConfiguration shiftConfiguration = shiftsConfig.get(1);
-		ShiftValidationResultEnum validationResult = shiftValidateFunctionBean.apply(shiftConfiguration);
+		ShiftConfigurationValidationResultEnum validationResult = shiftValidateFunctionBean.apply(shiftConfiguration);
 
-		assertThat(validationResult, is(ShiftValidationResultEnum.PARSING_FAIL));
+		assertThat(validationResult, is(ShiftConfigurationValidationResultEnum.PARSING_FAIL));
 	}
 	@Test
 	public void testValidationParsingFaliOnEndDate() throws Exception {
-		ShiftValidateFunction shiftValidateFunctionBean = context.getBean(ShiftValidateFunction.class);
+		ShiftConfigurationValidateFunction shiftValidateFunctionBean = context.getBean(ShiftConfigurationValidateFunction.class);
 		List<ShiftConfiguration> shiftsConfig = jsonLoader.getObject(SHIFT_JSON_FILE, new TypeReference<List<ShiftConfiguration>>() {});
 		
 
 		ShiftConfiguration shiftConfiguration = shiftsConfig.get(2);
-		ShiftValidationResultEnum validationResult = shiftValidateFunctionBean.apply(shiftConfiguration);
+		ShiftConfigurationValidationResultEnum validationResult = shiftValidateFunctionBean.apply(shiftConfiguration);
 
-		assertThat(validationResult, is(ShiftValidationResultEnum.PARSING_FAIL));
+		assertThat(validationResult, is(ShiftConfigurationValidationResultEnum.PARSING_FAIL));
 	}
 	@Test
 	public void testValidationParsingFaliOnEndDateAndStartDate() throws Exception {
-		ShiftValidateFunction shiftValidateFunctionBean = context.getBean(ShiftValidateFunction.class);
+		ShiftConfigurationValidateFunction shiftValidateFunctionBean = context.getBean(ShiftConfigurationValidateFunction.class);
 		List<ShiftConfiguration> shiftsConfig = jsonLoader.getObject(SHIFT_JSON_FILE, new TypeReference<List<ShiftConfiguration>>() {});
 		
 
 		ShiftConfiguration shiftConfiguration = shiftsConfig.get(3);
-		ShiftValidationResultEnum validationResult = shiftValidateFunctionBean.apply(shiftConfiguration);
+		ShiftConfigurationValidationResultEnum validationResult = shiftValidateFunctionBean.apply(shiftConfiguration);
 
-		assertThat(validationResult, is(ShiftValidationResultEnum.PARSING_FAIL));
+		assertThat(validationResult, is(ShiftConfigurationValidationResultEnum.PARSING_FAIL));
 	}
 	@Test
 	public void testEndDateStartDate() throws Exception {
-		ShiftValidateFunction shiftValidateFunctionBean = context.getBean(ShiftValidateFunction.class);
+		ShiftConfigurationValidateFunction shiftValidateFunctionBean = context.getBean(ShiftConfigurationValidateFunction.class);
 		List<ShiftConfiguration> shiftsConfig = jsonLoader.getObject(SHIFT_JSON_FILE, new TypeReference<List<ShiftConfiguration>>() {});
 		
 
 		ShiftConfiguration shiftConfiguration = shiftsConfig.get(4);
-		ShiftValidationResultEnum validationResult = shiftValidateFunctionBean.apply(shiftConfiguration);
+		ShiftConfigurationValidationResultEnum validationResult = shiftValidateFunctionBean.apply(shiftConfiguration);
 
-		assertThat(validationResult, is(ShiftValidationResultEnum.END_DATE_BEFORE_START_DATE));
+		assertThat(validationResult, is(ShiftConfigurationValidationResultEnum.END_DATE_BEFORE_START_DATE));
 	}
 	
 }
