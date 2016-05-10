@@ -1,0 +1,1163 @@
+{
+	"shiftConfigurations":[
+		{
+			"startDate":"01/06/2014 08:00",
+			"endDate":"01/06/2014 16:00",
+			"capacity":5,
+			"shiftRole":"employee",
+			"shiftCharacteristics":{
+				"shiftType":"Regular"
+			}
+			
+		},
+		{
+			"startDate":"01/06/2014 16:00",
+			"endDate":"01/06/2014 23:00",
+			"capacity":5,
+			"shiftRole":"employee",
+			"shiftCharacteristics":{
+				"shiftType":"Regular"
+			}
+			
+		},
+		{
+			"startDate":"01/06/2014 23:00",
+			"endDate":"02/06/2014 08:00",
+			"capacity":5,
+			"shiftRole":"employee",
+			"shiftCharacteristics":{
+				"shiftType":"Regular"
+			}
+			
+		},
+		{
+			"startDate":"02/06/2014 08:00",
+			"endDate":"02/06/2014 16:00",
+			"capacity":5,
+			"shiftRole":"employee",
+			"shiftCharacteristics":{
+				"shiftType":"Regular"
+			}
+			
+		},
+		{
+			"startDate":"02/06/2014 16:00",
+			"endDate":"02/06/2014 23:00",
+			"capacity":5,
+			"shiftRole":"employee",
+			"shiftCharacteristics":{
+				"shiftType":"Regular"
+			}
+			
+		},
+		{
+			"startDate":"02/06/2014 23:00",
+			"endDate":"03/06/2014 08:00",
+			"capacity":5,
+			"shiftRole":"employee",
+			"shiftCharacteristics":{
+				"shiftType":"Regular"
+			}
+			
+		},
+		{
+			"startDate":"03/06/2014 08:00",
+			"endDate":"03/06/2014 16:00",
+			"capacity":5,
+			"shiftRole":"employee",
+			"shiftCharacteristics":{
+				"shiftType":"Regular"
+			}
+			
+		},
+		{
+			"startDate":"03/06/2014 16:00",
+			"endDate":"03/06/2014 23:00",
+			"capacity":5,
+			"shiftRole":"employee",
+			"shiftCharacteristics":{
+				"shiftType":"Regular"
+			}
+			
+		},
+		{
+			"startDate":"03/06/2014 23:00",
+			"endDate":"04/06/2014 08:00",
+			"capacity":5,
+			"shiftRole":"employee",
+			"shiftCharacteristics":{
+				"shiftType":"Regular"
+			}
+			
+		},
+		{
+			"startDate":"04/06/2014 08:00",
+			"endDate":"04/06/2014 16:00",
+			"capacity":5,
+			"shiftRole":"employee",
+			"shiftCharacteristics":{
+				"shiftType":"Regular"
+			}
+			
+		},
+		{
+			"startDate":"04/06/2014 16:00",
+			"endDate":"04/06/2014 23:00",
+			"capacity":5,
+			"shiftRole":"employee",
+			"shiftCharacteristics":{
+				"shiftType":"Regular"
+			}
+			
+		},
+		{
+			"startDate":"04/06/2014 23:00",
+			"endDate":"05/06/2014 08:00",
+			"capacity":5
+		},
+		{
+			"startDate":"05/06/2014 08:00",
+			"endDate":"05/06/2014 16:00",
+			"capacity":5,
+			"shiftRole":"employee",
+			"shiftCharacteristics":{
+				"shiftType":"Regular"
+			}
+			
+		},
+		{
+			"startDate":"05/06/2014 16:00",
+			"endDate":"05/06/2014 23:00",
+			"capacity":5,
+			"shiftRole":"employee",
+			"shiftCharacteristics":{
+				"shiftType":"Regular"
+			}
+			
+		},
+		{
+			"startDate":"05/06/2014 23:00",
+			"endDate":"06/06/2014 08:00",
+			"capacity":5,
+			"shiftRole":"employee",
+			"shiftCharacteristics":{
+				"shiftType":"Regular"
+			}
+			
+		},
+		{
+			"startDate":"06/06/2014 08:00",
+			"endDate":"06/06/2014 16:00",
+			"capacity":5,
+			"shiftRole":"employee",
+			"shiftCharacteristics":{
+				"shiftType":"Regular"
+			}
+			
+		},
+		{
+			"startDate":"06/06/2014 16:00",
+			"endDate":"06/06/2014 23:00",
+			"capacity":5,
+			"shiftRole":"employee",
+			"shiftCharacteristics":{
+				"shiftType":"Regular"
+			}
+			
+		},
+		{
+			"startDate":"06/06/2014 23:00",
+			"endDate":"07/06/2014 08:00",
+			"capacity":5,
+			"shiftRole":"employee",
+			"shiftCharacteristics":{
+				"shiftType":"Regular"
+			}
+			
+		},
+		{
+			"startDate":"07/06/2014 08:00",
+			"endDate":"07/06/2014 16:00",
+			"capacity":5,
+			"shiftRole":"employee",
+			"shiftCharacteristics":{
+				"shiftType":"Regular"
+			}
+			
+		},
+		{
+			"startDate":"07/06/2014 16:00",
+			"endDate":"07/06/2014 23:00",
+			"capacity":5,
+			"shiftRole":"employee",
+			"shiftCharacteristics":{
+				"shiftType":"Regular"
+			}
+			
+		},
+		{
+			"startDate":"07/06/2014 23:00",
+			"endDate":"08/06/2014 08:00",
+			"capacity":5,
+			"shiftRole":"employee",
+			"shiftCharacteristics":{
+				"shiftType":"Regular"
+			}
+			
+		}
+		
+	],
+	"employees":[
+		{
+			"employeeMetadata":{
+				"name":"tomer",
+				"role":{
+					"roleName":"employee"
+				}
+				
+			},
+			"shifts":[
+				{
+					"shiftKey":"01/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"01/06/2014 16:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"01/06/2014 23:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"02/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"02/06/2014 16:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"02/06/2014 23:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"03/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"03/06/2014 16:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"03/06/2014 23:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"04/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"04/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"04/06/201423:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"05/06/201408:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"05/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"05/06/201423:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"06/06/201408:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"06/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"06/06/201423:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"07/06/201408:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"07/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"07/06/201423:00",
+					"preference":"PREFERED"
+				}
+				
+			]
+	},{
+			"employeeMetadata":{
+				"name":"moshe",
+				"role":{
+					"roleName":"employee"
+				}
+				
+			},
+			"shifts":[
+				{
+					"shiftKey":"01/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"01/06/2014 16:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"01/06/2014 23:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"02/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"02/06/2014 16:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"02/06/2014 23:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"03/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"03/06/2014 16:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"03/06/2014 23:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"04/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"04/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"04/06/201423:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"05/06/201408:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"05/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"05/06/201423:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"06/06/201408:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"06/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"06/06/201423:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"07/06/201408:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"07/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"07/06/201423:00",
+					"preference":"PREFERED"
+				}
+				
+			]
+	},{
+			"employeeMetadata":{
+				"name":"jill",
+				"role":{
+					"roleName":"employee"
+				}
+				
+			},
+			"shifts":[
+				{
+					"shiftKey":"01/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"01/06/2014 16:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"01/06/2014 23:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"02/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"02/06/2014 16:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"02/06/2014 23:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"03/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"03/06/2014 16:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"03/06/2014 23:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"04/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"04/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"04/06/201423:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"05/06/201408:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"05/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"05/06/201423:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"06/06/201408:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"06/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"06/06/201423:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"07/06/201408:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"07/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"07/06/201423:00",
+					"preference":"PREFERED"
+				}
+				
+			]
+	},{
+			"employeeMetadata":{
+				"name":"jack",
+				"role":{
+					"roleName":"employee"
+				}
+				
+			},
+			"shifts":[
+				{
+					"shiftKey":"01/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"01/06/2014 16:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"01/06/2014 23:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"02/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"02/06/2014 16:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"02/06/2014 23:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"03/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"03/06/2014 16:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"03/06/2014 23:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"04/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"04/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"04/06/201423:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"05/06/201408:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"05/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"05/06/201423:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"06/06/201408:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"06/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"06/06/201423:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"07/06/201408:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"07/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"07/06/201423:00",
+					"preference":"PREFERED"
+				}
+				
+			]
+	},{
+			"employeeMetadata":{
+				"name":"miri",
+				"role":{
+					"roleName":"employee"
+				}
+				
+			},
+			"shifts":[
+				{
+					"shiftKey":"01/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"01/06/2014 16:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"01/06/2014 23:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"02/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"02/06/2014 16:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"02/06/2014 23:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"03/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"03/06/2014 16:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"03/06/2014 23:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"04/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"04/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"04/06/201423:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"05/06/201408:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"05/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"05/06/201423:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"06/06/201408:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"06/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"06/06/201423:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"07/06/201408:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"07/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"07/06/201423:00",
+					"preference":"PREFERED"
+				}
+				
+			]
+	},{
+			"employeeMetadata":{
+				"name":"adam",
+				"role":{
+					"roleName":"employee"
+				}
+				
+			},
+			"shifts":[
+				{
+					"shiftKey":"01/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"01/06/2014 16:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"01/06/2014 23:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"02/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"02/06/2014 16:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"02/06/2014 23:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"03/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"03/06/2014 16:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"03/06/2014 23:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"04/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"04/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"04/06/201423:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"05/06/201408:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"05/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"05/06/201423:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"06/06/201408:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"06/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"06/06/201423:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"07/06/201408:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"07/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"07/06/201423:00",
+					"preference":"PREFERED"
+				}
+				
+			]
+	},{
+			"employeeMetadata":{
+				"name":"amit",
+				"role":{
+					"roleName":"employee"
+				}
+				
+			},
+			"shifts":[
+				{
+					"shiftKey":"01/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"01/06/2014 16:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"01/06/2014 23:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"02/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"02/06/2014 16:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"02/06/2014 23:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"03/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"03/06/2014 16:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"03/06/2014 23:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"04/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"04/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"04/06/201423:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"05/06/201408:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"05/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"05/06/201423:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"06/06/201408:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"06/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"06/06/201423:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"07/06/201408:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"07/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"07/06/201423:00",
+					"preference":"PREFERED"
+				}
+				
+			]
+	},{
+			"employeeMetadata":{
+				"name":"asaf",
+				"role":{
+					"roleName":"employee"
+				}
+				
+			},
+			"shifts":[
+				{
+					"shiftKey":"01/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"01/06/2014 16:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"01/06/2014 23:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"02/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"02/06/2014 16:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"02/06/2014 23:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"03/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"03/06/2014 16:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"03/06/2014 23:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"04/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"04/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"04/06/201423:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"05/06/201408:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"05/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"05/06/201423:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"06/06/201408:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"06/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"06/06/201423:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"07/06/201408:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"07/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"07/06/201423:00",
+					"preference":"PREFERED"
+				}
+				
+			]
+	},{
+			"employeeMetadata":{
+				"name":"tal",
+				"role":{
+					"roleName":"employee"
+				}
+				
+			},
+			"shifts":[
+				{
+					"shiftKey":"01/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"01/06/2014 16:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"01/06/2014 23:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"02/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"02/06/2014 16:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"02/06/2014 23:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"03/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"03/06/2014 16:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"03/06/2014 23:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"04/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"04/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"04/06/201423:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"05/06/201408:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"05/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"05/06/201423:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"06/06/201408:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"06/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"06/06/201423:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"07/06/201408:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"07/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"07/06/201423:00",
+					"preference":"PREFERED"
+				}
+				
+			]
+	},{
+			"employeeMetadata":{
+				"name":"avi",
+				"role":{
+					"roleName":"employee"
+				}
+				
+			},
+			"shifts":[
+				{
+					"shiftKey":"01/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"01/06/2014 16:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"01/06/2014 23:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"02/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"02/06/2014 16:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"02/06/2014 23:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"03/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"03/06/2014 16:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"03/06/2014 23:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"04/06/2014 08:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"04/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"04/06/201423:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"05/06/201408:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"05/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"05/06/201423:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"06/06/201408:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"06/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"06/06/201423:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"07/06/201408:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"07/06/201416:00",
+					"preference":"PREFERED"
+				},
+				{
+					"shiftKey":"07/06/201423:00",
+					"preference":"PREFERED"
+				}
+				
+			]
+	}
+	]
+}
