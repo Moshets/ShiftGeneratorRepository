@@ -19,6 +19,7 @@ public class ShiftConfigurationValidateFunctionTest {
 	private JsonLoader jsonLoader = new JsonLoader();
 	private static final String RESOURCE_FOLDER = "il/co/shiftsgenerator/engine/services/validation/";
 	private final String SHIFT_JSON_FILE = RESOURCE_FOLDER+"shiftCofigInputListToValidate.json";
+	private final String SHIFT_JSON_FILE_PASS = RESOURCE_FOLDER+"shiftConfigToValidatePass.json";
 	
 	@BeforeClass
 	public static void setUpBeforeClass() throws Exception {
@@ -38,6 +39,19 @@ public class ShiftConfigurationValidateFunctionTest {
 		assertThat(validationResult, is(ShiftConfigurationValidationResultEnum.PASS));
 	}
 
+	@Test
+	public void testValidationPass1() throws Exception {
+		
+		ShiftConfigurationValidateFunction shiftValidateFunctionBean = context.getBean(ShiftConfigurationValidateFunction.class);
+		ShiftConfiguration shiftsConfig = jsonLoader.getObject(SHIFT_JSON_FILE_PASS, new TypeReference<ShiftConfiguration>() {});
+		
+
+		ShiftConfiguration shiftConfiguration = shiftsConfig;
+		ShiftConfigurationValidationResultEnum validationResult = shiftValidateFunctionBean.apply(shiftConfiguration);
+
+		assertThat(validationResult, is(ShiftConfigurationValidationResultEnum.PASS));
+	}
+	
 	@Test
 	public void testValidationParsingFaliOnStartDate() throws Exception {
 		ShiftConfigurationValidateFunction shiftValidateFunctionBean = context.getBean(ShiftConfigurationValidateFunction.class);

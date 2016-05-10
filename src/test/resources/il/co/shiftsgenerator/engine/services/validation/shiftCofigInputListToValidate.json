@@ -2,35 +2,30 @@
 	{
 		"startDate":"01/06/2014 08:00",
 		"endDate":"01/06/2014 16:00",
-		"shiftType":"Regular",
 		"capacity":5,
 		"shiftRole":"employee"
 	},
 	{
 		"startDate":"01/06/2014 16:00",
 		"endDate":"01/06-2014 23:00",
-		"shiftType":"Regular",
 		"capacity":5,
 		"shiftRole":"employee"
 	},
 	{
 		"startDate":"01/06/2014 23:00",
 		"endDate":"02-06/2014 08:00",
-		"shiftType":"Regular",
 		"capacity":5,
 		"shiftRole":"employee"
 	},
 	{
 		"startDate":"02-06/2014 08:00",
 		"endDate":"02/06-2014 16:00",
-		"shiftType":"Regular",
 		"capacity":5,
 		"shiftRole":"employee"
 	},
 	{
 		"startDate":"02/06/2014 16:10",
 		"endDate":"02/06/2014 16:00",
-		"shiftType":"Regular",
 		"capacity":5,
 		"shiftRole":"employee"
 	}

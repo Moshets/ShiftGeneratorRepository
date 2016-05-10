@@ -31,9 +31,6 @@ public class ShiftConfigurationTest {
 
 		assertThat(shiftConfigurations, is(notNullValue()));
 		assertThat(shiftConfigurations, hasSize(21));
-		assertThat(shiftConfigurations.get(2).getShiftType(),is("Regular"));
-		assertThat(shiftConfigurations.get(2).getShiftType(),is("Regular"));
-		
 	}
 
 }

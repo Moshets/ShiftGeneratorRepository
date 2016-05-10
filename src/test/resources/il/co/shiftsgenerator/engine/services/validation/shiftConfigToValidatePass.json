@@ -1,0 +1,9 @@
+{
+		"startDate":"01/06/2014 08:00",
+		"endDate":"01/06/2014 16:00",
+		"capacity":5,
+		"shiftRole":"employee",
+		"shiftCharacteristics":{
+			"shiftType":"Regular"
+		}
+}
