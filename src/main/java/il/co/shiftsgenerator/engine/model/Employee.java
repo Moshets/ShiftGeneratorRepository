@@ -20,6 +20,10 @@ public class Employee {
 	public void setShifts(List<Shift> shifts) {
 		this.shifts = shifts;
 	}
+	@Override
+	public String toString() {
+		return "Employee [employeeMetadata=" + employeeMetadata + "]";
+	}
 	
 	
 }
