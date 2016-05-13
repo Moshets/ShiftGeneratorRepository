@@ -4,6 +4,7 @@ public class EmployeeMetadata {
 
 	private String name;
 	private Role role;
+	private EmployeeCharacteristics employeeCharacteristics;
 	
 	public String getName() {
 		return name;
@@ -16,6 +17,12 @@ public class EmployeeMetadata {
 	}
 	public void setRole(Role role) {
 		this.role = role;
+	}
+	public EmployeeCharacteristics getEmployeeCharacteristics() {
+		return employeeCharacteristics;
+	}
+	public void setEmployeeCharacteristics(EmployeeCharacteristics employeeCharacteristics) {
+		this.employeeCharacteristics = employeeCharacteristics;
 	}
 	@Override
 	public String toString() {
