@@ -10,6 +10,7 @@ public class Shift {
 	private boolean assign;
 	private int remainCapacity;
 	private List<EmployeeMetadata> selectedEmployees;
+	private List<EmployeeMetadata> availableEmployees;
 	
 
 	public Preference getPreference() {
@@ -47,6 +48,12 @@ public class Shift {
 	}
 	public void setShiftKey(String shiftKey) {
 		this.shiftKey = shiftKey;
+	}
+	public List<EmployeeMetadata> getAvailableEmployees() {
+		return availableEmployees;
+	}
+	public void setAvailableEmployees(List<EmployeeMetadata> availableEmployees) {
+		this.availableEmployees = availableEmployees;
 	}
 	@Override
 	public String toString() {
