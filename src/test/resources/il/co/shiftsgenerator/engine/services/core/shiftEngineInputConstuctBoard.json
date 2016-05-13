@@ -1,0 +1,130 @@
+{
+	"shiftConfigurations": 
+	[
+		{
+			"startDate": "01/06/2014 08:00",
+			"endDate": "01/06/2014 16:00",
+			"shiftKey": "1",
+			"capacity": 5,
+			"shiftRole": "employee",
+			"shiftCharacteristics": 
+			{
+				"shiftType": "Regular"
+			}
+		},
+
+		{
+			"startDate": "01/06/2014 16:00",
+			"endDate": "01/06/2014 23:00",
+			"shiftKey": "2",
+			"capacity": 5,
+			"shiftRole": "employee",
+			"shiftCharacteristics": 
+			{
+				"shiftType": "Regular"
+			}
+		},
+
+		{
+			"startDate": "01/06/2014 23:00",
+			"endDate": "02/06/2014 08:00",
+			"shiftKey": "3",
+			"capacity": 5,
+			"shiftRole": "employee",
+			"shiftCharacteristics": 
+			{
+				"shiftType": "Regular"
+			}
+		}
+	],
+
+	"employees": 
+	[
+		{
+			"employeeMetadata": 
+			{
+				"name": "asaf",
+				"role": 
+				{
+					"roleName": "employee"
+				}
+			},
+
+			"shifts": 
+			[
+				{
+					"shiftKey": "1",
+					"preference": "PREFERRED"
+				},
+
+				{
+					"shiftKey": "2",
+					"preference": "PREFERRED"
+				},
+
+				{
+					"shiftKey": "3",
+					"preference": "PREFERRED"
+				}
+			]
+		},
+
+		{
+			"employeeMetadata": 
+			{
+				"name": "moshe",
+				"role": 
+				{
+					"roleName": "employee"
+				}
+			},
+
+			"shifts": 
+			[
+				{
+					"shiftKey": "1",
+					"preference": "PREFERRED"
+				},
+
+				{
+					"shiftKey": "2",
+					"preference": "PREFERRED"
+				},
+
+				{
+					"shiftKey": "3",
+					"preference": "PREFERRED"
+				}
+			]
+		},
+
+		{
+			"employeeMetadata": 
+			{
+				"name": "jill",
+				"role": 
+				{
+					"roleName": "employee"
+				}
+			},
+
+			"shifts": 
+			[
+				{
+					"shiftKey": "1",
+					"preference": "PREFERRED"
+				},
+
+				{
+					"shiftKey": "2",
+					"preference": "PREFERRED"
+				},
+
+				{
+					"shiftKey": "3",
+					"preference": "PREFERRED"
+				}
+			]
+		}
+	]
+}

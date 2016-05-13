@@ -21,7 +21,7 @@ public class CollectEmployeeChoices implements Function<Board, Board> {
 	public Board apply(Board board) {
 		List<ShiftConfiguration> shiftConfigurations = board.getShiftEngineInput().getShiftConfigurations();
 		board.getShiftsOnBoardMap();
-		return null;
+		return board;
 	}
 
 }
