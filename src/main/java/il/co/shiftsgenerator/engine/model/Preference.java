@@ -3,8 +3,8 @@ package il.co.shiftsgenerator.engine.model;
 public enum Preference {
 
 	BLOCKED(0),
-	NOT_PREFERED(1),
-	PREFERED(2);
+	NOT_PREFERRED(1),
+	PREFERRED(2);
 	
 	private int index;
 
