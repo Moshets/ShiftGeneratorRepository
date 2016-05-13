@@ -6,7 +6,6 @@ import java.util.Map;
 public class Board{
 
 	private ShiftEngineInput shiftEngineInput;
-	private List<ShiftOnBoard> shiftsOnBoard;
 	private Map<String, ShiftOnBoard> shiftsOnBoardMap;
 	
 	public ShiftEngineInput getShiftEngineInput() {
@@ -15,14 +14,6 @@ public class Board{
 
 	public void setShiftEngineInput(ShiftEngineInput shiftEngineInput) {
 		this.shiftEngineInput = shiftEngineInput;
-	}
-
-	public List<ShiftOnBoard> getShiftsOnBoard() {
-		return shiftsOnBoard;
-	}
-
-	public void setShiftsOnBoard(List<ShiftOnBoard> shiftsOnBoard) {
-		this.shiftsOnBoard = shiftsOnBoard;
 	}
 
 	public Map<String, ShiftOnBoard> getShiftsOnBoardMap() {

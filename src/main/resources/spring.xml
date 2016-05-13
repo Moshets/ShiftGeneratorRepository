@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <beans xmlns="http://www.springframework.org/schema/beans"
-	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-	xmlns:aop="http://www.springframework.org/schema/aop"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:aop="http://www.springframework.org/schema/aop"
 	xsi:schemaLocation="http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
 		http://www.springframework.org/schema/aop http://www.springframework.org/schema/aop/spring-aop-4.0.xsd">
 
@@ -14,18 +13,28 @@
 	<bean name="dateFormat" class="java.text.SimpleDateFormat">
 		<constructor-arg value="dd/MM/YYYY hh:mm"></constructor-arg>
 	</bean>
-
-
-	<bean id="EmployeeShiftFitConfigurationPredicate"
-		name="EmployeeShiftFitConfigurationPredicate"
+	<bean id="EmployeeShiftFitConfigurationPredicate" name="EmployeeShiftFitConfigurationPredicate"
 		class="il.co.shiftsgenerator.engine.services.validation.EmployeeShiftFitConfigurationPredicate">
-		<property name="shiftKeyIsNullMessageTemplate" value="For employee %s the shift %s has null shift key"></property>
-		<property name="shiftKeyDoseNotExistMessageTemplate" value="Shift Key: %s dose not exists in configuration For employee"></property>
-		<property name="employeeRegisteredToUnauthorizedShiftMessageTemplate" value="For employee %s the shift role %s dose not fit in shift configuration"></property>
+		<property name="shiftKeyIsNullMessageTemplate"
+			value="For employee %s the shift %s has null shift key"></property>
+		<property name="shiftKeyDoseNotExistMessageTemplate"
+			value="Shift Key: %s dose not exists in configuration For employee"></property>
+		<property name="employeeRegisteredToUnauthorizedShiftMessageTemplate"
+			value="For employee %s the shift role %s dose not fit in shift configuration"></property>
 		<property name="shiftConfigurationToShiftKeyTransformer" ref="shiftConfigurationToShiftKeyTransformer"></property>
 	</bean>
-	<bean class="il.co.shiftsgenerator.engine.services.core.ConstructBoard" name="ConstructBoard">
-	<property name="configurationToShiftKeyTransformer" ref="shiftConfigurationToShiftKeyTransformer"></property>
+	<bean class="il.co.shiftsgenerator.engine.services.core.ConstructBoard"
+		name="ConstructBoard">
+		<property name="configurationToShiftKeyTransformer" ref="shiftConfigurationToShiftKeyTransformer"></property>
 	</bean>
-	<bean class="il.co.shiftsgenerator.engine.services.validation.ShiftConfigurationToShiftKeyTransformer" name="shiftConfigurationToShiftKeyTransformer"></bean>
+	<bean
+		class="il.co.shiftsgenerator.engine.services.validation.ShiftConfigurationToShiftKeyTransformer"
+		name="shiftConfigurationToShiftKeyTransformer"></bean>
+	<bean
+		class="il.co.shiftsgenerator.engine.services.core.CollectEmployeeChoices"
+		name="CollectEmployeeChoices"></bean>
+	<bean class="il.co.shiftsgenerator.engine.services.core.CalculateShiftToPopulate" name="CalculateShiftToPopulate">
+		<property name="scoreFunction" ref="ShiftOnBoardToScoreTransformer"></property>
+	</bean>
+	<bean class="il.co.shiftsgenerator.engine.services.core.ShiftOnBoardToScoreTransformer" name="ShiftOnBoardToScoreTransformer"></bean>	
 </beans>

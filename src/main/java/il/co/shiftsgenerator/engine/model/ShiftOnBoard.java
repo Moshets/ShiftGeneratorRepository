@@ -40,5 +40,4 @@ public class ShiftOnBoard {
 	public void setAvailableEmployees(List<EmployeeMetadata> availableEmployees) {
 		this.availableEmployees = availableEmployees;
 	}
-
 }
