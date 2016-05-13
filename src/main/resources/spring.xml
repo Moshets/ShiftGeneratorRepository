@@ -24,6 +24,8 @@
 		<property name="employeeRegisteredToUnauthorizedShiftMessageTemplate" value="For employee %s the shift role %s dose not fit in shift configuration"></property>
 		<property name="shiftConfigurationToShiftKeyTransformer" ref="shiftConfigurationToShiftKeyTransformer"></property>
 	</bean>
-	
+	<bean class="il.co.shiftsgenerator.engine.services.core.ConstructBoard" name="ConstructBoard">
+	<property name="configurationToShiftKeyTransformer" ref="shiftConfigurationToShiftKeyTransformer"></property>
+	</bean>
 	<bean class="il.co.shiftsgenerator.engine.services.validation.ShiftConfigurationToShiftKeyTransformer" name="shiftConfigurationToShiftKeyTransformer"></bean>
 </beans>

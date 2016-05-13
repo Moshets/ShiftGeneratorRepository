@@ -1,5 +1,6 @@
 This is the general process for the shift engine
 
+0.Construct Board
 1.Collect All data from All employee and calculate employee Availability for each shift
 2.Calculate from which shift to start pick 
 2.Pick employee

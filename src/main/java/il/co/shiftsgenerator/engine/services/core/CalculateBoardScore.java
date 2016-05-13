@@ -1,4 +1,4 @@
-package il.co.shiftsgenerator.engine.services;
+package il.co.shiftsgenerator.engine.services.core;
 
 import il.co.shiftsgenerator.engine.model.Board;
 

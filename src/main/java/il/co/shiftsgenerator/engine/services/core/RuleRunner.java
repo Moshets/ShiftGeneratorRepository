@@ -1,4 +1,4 @@
-package il.co.shiftsgenerator.engine.services;
+package il.co.shiftsgenerator.engine.services.core;
 
 /**
  * This rule runner class will apply all the rule for all employee
