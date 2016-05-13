@@ -14,6 +14,8 @@ public class EmployeeShiftFitConfigurationPredicateTest extends BaseTest{
 	
 	private final String SHIFT_ENGINE_INPUT_SHIFT_KEY_NOT_EXISTS = RESOURCE_FOLDER+"/model/shiftEngineInputShiftKeyNotExistsInConfiguration.json";
 	private final String SHIFT_ENGINE_INPUT_SHIFT_UNATHORIZED = RESOURCE_FOLDER+"/model/shiftEngineInputEmployeeResiteredToUnauthorizedShift.json";
+	private final String SHIFT_ENGINE_INPUT_OK = RESOURCE_FOLDER+"/model/shiftEngineInput.json";
+
 	@Rule
 	public ExpectedException expectedException = ExpectedException.none();
 
@@ -42,5 +44,13 @@ public class EmployeeShiftFitConfigurationPredicateTest extends BaseTest{
 			employeeShiftFitConfigurationPredicate.apply(shiftEngineInput);
 		
 	}
+	
+	@Test
+	public void engineInputOkTest() throws Exception {
 
+			ShiftEngineInput shiftEngineInput = jsonLoader.getObject(SHIFT_ENGINE_INPUT_OK, new TypeReference<ShiftEngineInput>() {});
+			EmployeeShiftFitConfigurationPredicate employeeShiftFitConfigurationPredicate = context.getBean(EmployeeShiftFitConfigurationPredicate.class);
+			employeeShiftFitConfigurationPredicate.apply(shiftEngineInput);
+		
+	}
 }
