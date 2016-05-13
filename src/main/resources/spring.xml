@@ -19,8 +19,9 @@
 	<bean id="EmployeeShiftFitConfigurationPredicate"
 		name="EmployeeShiftFitConfigurationPredicate"
 		class="il.co.shiftsgenerator.engine.services.validation.EmployeeShiftFitConfigurationPredicate">
-		<property name="nullMassegeTamplate" value="For employee %s the shift %s has null shift key"></property>
-		<property name="shiftKeyDoseNotExsitTamplate" value="Shift Key: %s dose not exists in configuration For employee"></property>
+		<property name="shiftKeyIsNullMessageTemplate" value="For employee %s the shift %s has null shift key"></property>
+		<property name="shiftKeyDoseNotExistMessageTemplate" value="Shift Key: %s dose not exists in configuration For employee"></property>
+		<property name="employeeRegisteredToUnauthorizedShiftMessageTemplate" value="For employee %s the shift role %s dose not fit in shift configuration"></property>
 		<property name="shiftConfigurationToShiftKeyTransformer" ref="shiftConfigurationToShiftKeyTransformer"></property>
 	</bean>
 	

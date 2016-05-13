@@ -13,17 +13,32 @@ import org.junit.rules.ExpectedException;
 public class EmployeeShiftFitConfigurationPredicateTest extends BaseTest{
 	
 	private final String SHIFT_ENGINE_INPUT_SHIFT_KEY_NOT_EXISTS = RESOURCE_FOLDER+"/model/shiftEngineInputShiftKeyNotExistsInConfiguration.json";
-
+	private final String SHIFT_ENGINE_INPUT_SHIFT_UNATHORIZED = RESOURCE_FOLDER+"/model/shiftEngineInputEmployeeResiteredToUnauthorizedShift.json";
 	@Rule
-	public ExpectedException expectedEx = ExpectedException.none();
+	public ExpectedException expectedException = ExpectedException.none();
 
-	@Test(expected=IllegalArgumentException.class)
-	public void test() throws Exception {
+	@Test
+	public void shiftKeyNotExistInConfigurationTest() throws Exception {
 
 			ShiftEngineInput shiftEngineInput = jsonLoader.getObject(SHIFT_ENGINE_INPUT_SHIFT_KEY_NOT_EXISTS, new TypeReference<ShiftEngineInput>() {});
 			
 			EmployeeShiftFitConfigurationPredicate employeeShiftFitConfigurationPredicate = context.getBean(EmployeeShiftFitConfigurationPredicate.class);
+			expectedException.expect(IllegalArgumentException.class);
+			expectedException.expectMessage("Shift Key: 3 dose not exists in configuration For employee");
+			employeeShiftFitConfigurationPredicate.apply(shiftEngineInput);
+		
+	}
+	
 
+	@Test
+	public void unauthorizedEmployeeTest() throws Exception {
+
+			ShiftEngineInput shiftEngineInput = jsonLoader.getObject(SHIFT_ENGINE_INPUT_SHIFT_UNATHORIZED, new TypeReference<ShiftEngineInput>() {});
+			
+			EmployeeShiftFitConfigurationPredicate employeeShiftFitConfigurationPredicate = context.getBean(EmployeeShiftFitConfigurationPredicate.class);
+			expectedException.expect(IllegalArgumentException.class);
+			expectedException.expectMessage("unauthorizedEmployee");
+			expectedException.expectMessage("dose not fit in shift configuration");
 			employeeShiftFitConfigurationPredicate.apply(shiftEngineInput);
 		
 	}

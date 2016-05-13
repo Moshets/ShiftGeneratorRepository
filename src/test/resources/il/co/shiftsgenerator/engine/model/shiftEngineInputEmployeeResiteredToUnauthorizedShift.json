@@ -34,7 +34,7 @@
 				"name": "asaf",
 				"role": 
 				{
-					"roleName": "employee"
+					"roleName": "unauthorizedEmployee"
 				}
 			},
 
@@ -47,11 +47,6 @@
 
 				{
 					"shiftKey": "2",
-					"preference": "PREFERED"
-				},
-
-				{
-					"shiftKey": "3",
 					"preference": "PREFERED"
 				}
 			]

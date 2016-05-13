@@ -17,8 +17,9 @@ import com.google.common.collect.Maps;
 public class EmployeeShiftFitConfigurationPredicate implements Predicate<ShiftEngineInput> {
 
 	
-	private String nullMassegeTamplate;
-	private String shiftKeyDoseNotExsitTamplate;
+	private String shiftKeyIsNullMessageTemplate;
+	private String shiftKeyDoseNotExistMessageTemplate;
+	private String employeeRegisteredToUnauthorizedShiftMessageTemplate;
 	private Function<ShiftConfiguration, String> shiftConfigurationToShiftKeyTransformer;
 	
 	@Override
@@ -30,29 +31,51 @@ public class EmployeeShiftFitConfigurationPredicate implements Predicate<ShiftEn
 		for (Employee employee : employees) {
 			List<Shift> shifts = employee.getShifts();
 			for (Shift shift : shifts) {
-				checkNotNull(shift.getShiftKey(), nullMassegeTamplate, employee,shift);
-				checkArgument(shiftConfigurationMap.containsKey(shift.getShiftKey()), shiftKeyDoseNotExsitTamplate, shift.getShiftKey(),employee);
+				checkNotNull(shift.getShiftKey(), shiftKeyIsNullMessageTemplate, employee,shift);
+				checkArgument(shiftConfigurationMap.containsKey(shift.getShiftKey()), shiftKeyDoseNotExistMessageTemplate, shift.getShiftKey(),employee);
+				checkArgument(isShiftRegistrationAuthorized(shiftConfigurationMap, employee, shift),employeeRegisteredToUnauthorizedShiftMessageTemplate,shift.getShiftKey(),employee);
 			}
 			
 		}
 		return true;
 	}
 
-	public String getNullMassegeTamplate() {
-		return nullMassegeTamplate;
+
+
+	private boolean isShiftRegistrationAuthorized(
+			ImmutableMap<String, ShiftConfiguration> shiftConfigurationMap,
+			Employee employee, Shift shift) {
+		String employeeRoleName = employee.getEmployeeMetadata().getRole().getRoleName();
+		String shiftRole = shiftConfigurationMap.get(shift.getShiftKey()).getShiftRole();
+		boolean shiftRoleEqualsEmployeeRole = shiftRole.equals(employeeRoleName);
+		return shiftRoleEqualsEmployeeRole;
 	}
 
-	public void setNullMassegeTamplate(String nullMassegetamplate) {
-		this.nullMassegeTamplate = nullMassegetamplate;
+	public String getShiftKeyIsNullMessageTemplate() {
+		return shiftKeyIsNullMessageTemplate;
 	}
 
-	public String getShiftKeyDoseNotExsitTamplate() {
-		return shiftKeyDoseNotExsitTamplate;
+
+
+	public void setShiftKeyIsNullMessageTemplate(
+			String shiftKeyIsNullMessageTemplate) {
+		this.shiftKeyIsNullMessageTemplate = shiftKeyIsNullMessageTemplate;
 	}
 
-	public void setShiftKeyDoseNotExsitTamplate(String shiftKeyDoseNotExsitTamplate) {
-		this.shiftKeyDoseNotExsitTamplate = shiftKeyDoseNotExsitTamplate;
+
+
+	public String getShiftKeyDoseNotExistMessageTemplate() {
+		return shiftKeyDoseNotExistMessageTemplate;
 	}
+
+
+
+	public void setShiftKeyDoseNotExistMessageTemplate(
+			String shiftKeyDoseNotExistMessageTemplate) {
+		this.shiftKeyDoseNotExistMessageTemplate = shiftKeyDoseNotExistMessageTemplate;
+	}
+
+
 
 	public Function<ShiftConfiguration, String> getShiftConfigurationToShiftKeyTransformer() {
 		return shiftConfigurationToShiftKeyTransformer;
@@ -62,5 +85,21 @@ public class EmployeeShiftFitConfigurationPredicate implements Predicate<ShiftEn
 			Function<ShiftConfiguration, String> shiftConfigurationToShiftKeyTransformer) {
 		this.shiftConfigurationToShiftKeyTransformer = shiftConfigurationToShiftKeyTransformer;
 	}
+
+
+
+	public String getEmployeeRegisteredToUnauthorizedShiftMessageTemplate() {
+		return employeeRegisteredToUnauthorizedShiftMessageTemplate;
+	}
+
+
+
+	public void setEmployeeRegisteredToUnauthorizedShiftMessageTemplate(
+			String employeeRegisteredToUnauthorizedShiftMessageTemplate) {
+		this.employeeRegisteredToUnauthorizedShiftMessageTemplate = employeeRegisteredToUnauthorizedShiftMessageTemplate;
+	}
+
+
+
 
 }
